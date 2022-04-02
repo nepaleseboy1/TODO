@@ -1,0 +1,11 @@
+<div style="text-align: center;" >
+    <h2>are you sure to delete ??{{item}} </h2>
+<form action="" method="POST">
+    {%csrf_token %}
+    <input type="submit" name="Confirm" value="Delete">
+
+</form>
+
+<a href="{% url 'home' %} ">Cancel</a>
+
+</div>
